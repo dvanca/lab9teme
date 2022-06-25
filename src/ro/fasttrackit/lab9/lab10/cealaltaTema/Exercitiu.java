@@ -8,8 +8,8 @@ public class Exercitiu {
         Person marcel = new Person("Marcelescu Petrescu", 45, "welder");
         Person marcelescu = new Person("Iliescu", 25, "welder");
         companie.adaugaAngajatul(ion);
-        companie.adaugaAngajatul(ion);
-        companie.adaugaAngajatul(ion);
+        companie.adaugaAngajatul(marcel);
+        companie.adaugaAngajatul(marcelescu);
 
         //Person marcel = new Person("Marcelescu Petrescu", 45, "welder");
         //Person ion = new Person("Ioan Petrescu", 35, "manager");
@@ -17,5 +17,12 @@ public class Exercitiu {
        // Person ion = new Person("Ioan Petrescu", 35, "manager");
 
         System.out.println(companie);
+        companie.getManager();
+        companie.getPersons("welder");
+        companie.getPersonsOlder(35);
+        companie.getPerson("Ioan Petrescu");
+        companie.employ(new Person("Mihai", 15, "CEO"));
+        System.out.println(companie);
+        companie.roster();
     }
 }
